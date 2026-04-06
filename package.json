@@ -2,13 +2,13 @@
   "name": "@asdsadw12312dwd2112xz/trpc-config-cli",
   "version": "1.0.0",
   "type": "module",
-  "description": "CLI tool to generate tRPC configuration for type-safe APIs",
+  "description": "CLI tool to generate and manage tRPC type-safe API configurations",
   "bin": {
-    "trpc-config": "./dist/index.js"
+    "trpc-config": "dist/index.js"
   },
   "scripts": {
-    "build": "tsup",
-    "dev": "tsup --watch"
+    "build": "node node_modules/tsup/dist/cli-default.js",
+    "dev": "node node_modules/tsup/dist/cli-default.js --watch"
   },
   "dependencies": {
     "chalk": "^5.3.0",
@@ -26,7 +26,9 @@
     "trpc",
     "cli",
     "codegen",
-    "typescript"
+    "typescript",
+    "type-safe",
+    "api"
   ],
   "license": "MIT"
 }
